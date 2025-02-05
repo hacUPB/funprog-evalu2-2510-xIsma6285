@@ -35,3 +35,5 @@ Memoria RAM (RAM): Memoria volátil en la que se guardan de manera temporal los 
 
 Memoria adicional: Aparatos de almacenaje duraderos como discos duros y dispositivos externos USB, SSD, entre otros.
 
+
+Bibliografia: https://www.significados.com/hardware/
