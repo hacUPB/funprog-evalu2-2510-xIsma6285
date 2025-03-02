@@ -3,5 +3,5 @@
 ## Información del estudiante  
 Nombre del estudiante: Ismael Aristizabal 
 Id.: 000506819
----
+SI SE VAN A LEER LOS PSEUDOCODIGOS ABRIR CON PSEINT
 
