@@ -1,0 +1,80 @@
+1. Mostrar en pantalla los números del 10 al -10
+Pseudocódigo:
+Inicio  
+   a = 10  
+   Repetir  
+      Escribir a  
+      a = a - 1  
+   Mientras a >= -10  
+Fin
+________________________________________
+2. Serie de Fibonacci (imprimir N términos)
+Pseudocódigo:
+Inicio  
+   Leer N  
+   a = 0  
+   b = 1  
+   Escribir a, b  
+   Repetir  
+      c = a + b  
+      Escribir c  
+      a = b  
+      b = c  
+      N = N - 1  
+   Mientras N > 2  
+Fin
+________________________________________
+Parte 1: ¿Es un algoritmo?
+1.	Una página web
+No. No sigue una secuencia de pasos, es más bien una estructura visual e interactiva.
+2.	Receta para hacer un pastel
+Sí. Tiene pasos ordenados que llevan a un resultado final.
+3.	"Piensa en un número y multiplícalo por otro"
+No. Es muy general y no tiene pasos definidos ni condiciones de fin.
+4.	Manual para armar un mueble
+Sí. Tiene pasos claros, en orden, y un objetivo específico.
+5.	Lista de compras ordenada alfabéticamente
+No. Es solo una lista de cosas, no indica acciones a seguir.
+________________________________________
+Parte 2: Variables y Constantes
+1.	El valor de la gravedad en la Tierra
+Constante. No cambia.
+2.	Edad de una persona
+Variable. Cambia con el tiempo.
+3.	Dinero en una cuenta bancaria
+Variable. Puede aumentar o disminuir.
+4.	Velocidad de la luz
+Constante. Siempre es la misma.
+5.	Radio de un círculo
+Variable. Depende del tamaño del círculo.
+________________________________________
+Parte 3: ¿Cumplen con las características de un algoritmo?
+1.	Ruta más corta entre ciudades
+No. El criterio para detenerse no es claro, lo hace impreciso.
+2.	Suma de números ingresados
+Sí. Tiene pasos claros: entrada, proceso y salida.
+3.	Cálculo del área de un rectángulo
+Sí. Tiene pasos definidos y un resultado claro.
+4.	Conteo de votos con -1 para terminar
+Sí. Tiene inicio, instrucciones y una condición para terminar.
+________________________________________
+Parte 4: Pseudocódigo y Diagramas de Flujo
+1.	El pseudocódigo usa símbolos estándar
+Falso. Se escribe con palabras, no con símbolos.
+2.	Los diagramas de flujo representan visualmente un algoritmo
+Verdadero.
+3.	El pseudocódigo debe estar en un lenguaje de programación
+Falso. Se puede escribir en lenguaje común.
+4.	Un diagrama de flujo siempre tiene inicio y fin
+Verdadero.
+________________________________________
+Parte 5: Estructuras de Control
+Las estructuras de control sirven para tomar decisiones o repetir instrucciones dentro de un programa. Pueden ser condicionales (como if), ciclos (como while o for) o saltos (como break).
+Ejemplo de la vida diaria:
+Si está nublado o va a llover, llevo paraguas.
+Si no, salgo sin él.
+Ejemplo con cálculo:
+Si el promedio de notas es mayor o igual a 60, aprueba.
+Si es menor, reprueba.
+
+

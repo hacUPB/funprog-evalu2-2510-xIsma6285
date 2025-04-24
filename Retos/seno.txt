@@ -1,0 +1,21 @@
+Algoritmo CalcularSeno
+Definir x, termino, resultado, signo Como Real
+Definir n, i, factorial, potencia Como Entero
+Escribir "Ingrese el valor del ángulo:"
+Leer x
+Escribir "Ingrese el número de términos a calcular:"
+Leer n
+resultado = x
+signo = -1
+Para 1 = 1 Hasta n Hacer
+potencia = 2 * i + 1
+factorial = 1
+Para p = 1 Hasta potencia Hacer
+factorial = factorial * p
+FinPara
+termino = signo * (x 1 potencia) / factorial
+resultado = resultado + termino
+signo = signo * ( -1)
+FinPara
+Escribir "El seno de ", x, " es: ", resultado
+FinAlgoritmo
