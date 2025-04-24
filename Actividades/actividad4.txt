@@ -1,0 +1,214 @@
+1. Introducción
+
+¿Alguna vez te has preguntado cómo pasar de unos pasos escritos en forma de pseudocódigo a un programa real en lenguaje C?
+En este tutorial veremos cómo:
+
+Entender lo que dice el pseudocódigo.
+
+Escribirlo con la sintaxis del lenguaje C.
+
+Agregar detalles como tipos de datos, funciones y todo eso.
+
+Pregunta:
+¿Por qué es útil el pseudocódigo antes de escribir en C?
+Respuesta: Porque te permite organizar las ideas primero sin preocuparte por la sintaxis. Así es más fácil detectar errores, planear bien y pasar a C sin tanto problema.
+
+2. Estructura básica del pseudocódigo
+
+El pseudocódigo es como escribir lo que va a hacer el programa pero en español.
+Ejemplo:
+
+java
+Copy
+Edit
+INICIO  
+    Leer valor1  
+    Leer valor2  
+    suma = valor1 + valor2  
+    Mostrar suma  
+FIN
+Actividad:
+Hice uno de suma:
+
+nginx
+Copy
+Edit
+Algoritmo Suma  
+Escribir "Ingrese el primer número:"  
+Leer num1  
+Escribir "Ingrese el segundo número:"  
+Leer num2  
+resultado <- num1 + num2  
+Escribir "El resultado de la suma es:", resultado  
+FinAlgoritmo
+3. Traduciendo a lenguaje C
+
+Al traducir a C hay que:
+
+Declarar bien las variables (int, float, etc.)
+
+Usar scanf para leer y printf para mostrar
+
+Usar estructuras como if, for, etc.
+
+Ejemplo:
+
+c
+Copy
+Edit
+#include <stdio.h>
+
+int main() {
+    float valor1, valor2, suma;
+
+    printf("Ingresa el primer valor: ");
+    scanf("%f", &valor1);
+    printf("Ingresa el segundo valor: ");
+    scanf("%f", &valor2);
+
+    suma = valor1 + valor2;
+
+    printf("La suma es: %.2f\n", suma);
+
+    return 0;
+}
+Pregunta:
+¿Por qué hay que declarar el tipo de variable?
+Respuesta: Porque así el programa sabe cuánta memoria usar, qué valores acepta y evita errores raros. Además el código queda más claro.
+
+4. Más ejemplos
+
+Ejemplo 1: Mayor de dos números
+
+Pseudocódigo:
+
+nginx
+Copy
+Edit
+Leer num1  
+Leer num2  
+Si num1 > num2  
+    Mostrar "El número 1 es mayor"  
+Sino  
+    Mostrar "El número 2 es mayor"
+En C:
+
+c
+Copy
+Edit
+#include <stdio.h>
+
+int main() {
+    float num1, num2;
+
+    printf("Ingresa el primer número: ");
+    scanf("%f", &num1);
+    printf("Ingresa el segundo número: ");
+    scanf("%f", &num2);
+
+    if (num1 > num2) {
+        printf("El número 1 es mayor\n");
+    } else {
+        printf("El número 2 es mayor\n");
+    }
+
+    return 0;
+}
+Ejemplo 2: Factorial
+
+Pseudocódigo:
+
+matlab
+Copy
+Edit
+Leer n  
+factorial = 1  
+Para i desde 1 hasta n  
+    factorial = factorial * i  
+Mostrar factorial
+En C:
+
+c
+Copy
+Edit
+#include <stdio.h>
+
+int main() {
+    int n;
+    long factorial = 1;
+
+    printf("Ingresa un número entero: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+
+    printf("El factorial es: %ld\n", factorial);
+
+    return 0;
+}
+Actividad:
+Hice uno para promedio de calificaciones:
+
+Pseudocódigo:
+
+r
+Copy
+Edit
+Leer cantidad de calificaciones  
+suma <- 0  
+Para i desde 1 hasta n  
+    Leer calificación  
+    suma <- suma + calificación  
+promedio <- suma / n  
+Mostrar promedio
+En C:
+
+c
+Copy
+Edit
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float calificacion, suma = 0, promedio;
+
+    printf("Ingrese la cantidad de calificaciones: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("Ingrese la calificación %d: ", i);
+        scanf("%f", &calificacion);
+        suma += calificacion;
+    }
+
+    promedio = suma / n;
+    printf("El promedio es: %.2f\n", promedio);
+
+    return 0;
+}
+5. Buenas prácticas
+
+Comentar el código para que se entienda mejor.
+
+Usar funciones cuando el programa crece mucho.
+
+Poner nombres claros a las variables.
+
+Pregunta:
+¿Por qué comentar el código?
+Respuesta: Para entender más fácil qué hace cada parte, sobre todo si alguien más lo va a leer o si lo vas a revisar después.
+
+6. Reto final
+
+Traduje 5 pseudocódigos a C. Aquí dejo los códigos directamente para no hacer esto tan largo (ya los escribí bien arriba).
+
+Mensaje final:
+Traducir pseudocódigo a C me ayudó a entender mejor cómo funciona la lógica de un programa. Sirve para planear, para pensar antes de escribir código, y para evitar errores de lógica.
+
+Pregunta final:
+¿Qué debo reforzar?
+
+Respuesta:
+Debería practicar más cómo usar printf y scanf bien, porque a veces no me funciona el programa por eso. Pero en general me sentí cómodo haciendo la traducción.
